@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: udagram-api-feed
+  name: backend-feed
   labels:
-    app: udagram-api-feed
+    app: backend-feed
 spec:
   selector:
     matchLabels:
-      app: udagram-api-feed
+      app: backend-feed
   replicas: 2
   template:
     metadata:
       labels:
-        app: udagram-api-feed
+        app: backend-feed
     spec:
       containers:
-      - name: udagram-api-feed
+      - name: backend-feed
         image: jacobphelane/udagram-api-feed:latest
         env:
           - name: POSTGRES_DB

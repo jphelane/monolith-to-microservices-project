@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: udagram-api-user
+  name: backend-user
   labels:
-    app: udagram-api-user
+    app: backend-user
 spec:
   selector:
     matchLabels:
-      app: udagram-api-user
+      app: backend-user
   replicas: 2
   template:
     metadata:
       labels:
-        app: udagram-api-user
+        app: backend-user
     spec:
       containers:
-      - name: udagram-api-user
+      - name: backend-user
         image: jacobphelane/udagram-api-user:latest
         env:
           - name: POSTGRES_DB
