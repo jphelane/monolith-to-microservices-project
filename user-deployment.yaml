@@ -25,7 +25,7 @@ spec:
           - name: POSTGRES_PASSWORD
             value: K#QdT)7G!UNFRT&V
           - name: POSTGRES_HOST
-            value: postgres-database.cfg1ruu0beck.us-east-1.rds.amazonaws.com
+            value: postgres.czqcuowzmp4f.us-east-1.rds.amazonaws.com
           - name: AWS_BUCKET
             value: arn:aws:s3:::monolithic-microservices-bucket
           - name: AWS_REGION
